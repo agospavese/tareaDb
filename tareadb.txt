@@ -1,4 +1,4 @@
-1. Las relaciones me indican cómo se van a relacionar las tablas entre sí.
+1. Las relaciones me indican cómo se va a acceder y relacionar las tablas entre sí.
 
 Existen 3 tipos de bases de datos relacionales:
 
@@ -11,17 +11,15 @@ Existen 3 tipos de bases de datos relacionales:
 - Usuario (Socio) – Número de socio (ej, en un club)
 
   Uno a muchos(1:M): en este caso una persona puede tener varios teléfonos (fijo, celular privado, celular empresa), se coloca la clave primaria de la persona en la tabla teléfonos, ya que la misma está asociada a una persona particular.
-         Ejemplos:
-         - Usuario – Teléfonos
-         - Escritor – Libros
-         - Director – Películas
-         - Usuario – Tarjetas de crédito
-         - Compositor – Canciones
-
- Muchos a muchos (M:M): en este caso muchas personas pueden comprar muchos productos. Acá tenemos 3 tablas, clientes, productos y clientes-productos. En ésta última se almacenarán ambos id (fk) que estarán relacionados con el id (pk) de la tabla clientes-productos.
- 
  Ejemplos:
+ - Usuario – Teléfonos
+ - Escritor – Libros
+ - Director – Películas
+ - Usuario – Tarjetas de crédito
+ - Compositor – Canciones
 
+ Muchos a muchos (M:M): en este caso muchas personas pueden comprar muchos productos. Acá tenemos 3 tablas, clientes, productos y clientes-productos. En ésta última se almacenarán ambos id (fk) que estarán relacionados con los id (pk) de las tablas clientes y productos.
+ Ejemplos:
 - Clientes – Productos
 - Alumnos– Materias
 - Actores – Películas
@@ -29,7 +27,7 @@ Existen 3 tipos de bases de datos relacionales:
 - Usuarios – Redes social
 
 2. SGBD es el Sistema Gestor de Base de Datos, es un conjunto de programas que nos permite almacenar, extraer y modificar la información contenida en la misma.
-•	Ejemplos: MySQL, Oracle Database, MongoDB, Cassandra, Microsoft Acces.
+Ejemplos: MySQL, Oracle Database, MongoDB, Cassandra, Microsoft Acces.
 
 3. Las bases de datos relacionales organizan su información en partes pequeñas y las cuales se relacionan con un identificador y de forma directa.
 Las bases de datos no relacionales no tienen un identificador que permita relacionarlas y no siguen el sistema de filas y columnas.
